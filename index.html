@@ -8,37 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="m1">deer: 0</p>
-    <p id="m2">gourd: 0</p>
-    <p id="m3">chick: 0</p>
-    <p id="m4">fish: 0</p>
-    <p id="m5">crab: 0</p>
-    <p id="m6">shrimp: 0</p>
-    <input type="number" min="0" id="add">
-    <button onclick="add_money()">Add money</button>
-    <button id='end' onclick="end()">End Bet</button>
-    <button id='start' onclick="start()">Start</button>
-    <button id='again' onclick="again()">Again</button>
-    <div>
-        <input type="range" min="0" max="50" value="0" step= '10' id="myRange">
-        <p id='m_bet'></p>
-        <p id="total"></p>
-        <p id="earn">You earn: ...</p>
-    </div>
-    <div>
-        <button class='random' id="r1"></button>
-        <button class='random' id='r2'></button>
-        <button class='random' id="r3"></button>
-    </div> 
 
-    <div>
-        <button class='choice' id="1" onclick="change(1)"><img src='./images/deer.png' width="60px" height="80px"></button>
-        <button class='choice' id="2" onclick="change(2)"><img src='./images/holo.png' width="60px" height="80px"></button>
-        <button class='choice' id="3" onclick="change(3)"><img src='./images/chick.png' width="60px" height="80px"></button>
-        <button class='choice' id="4" onclick="change(4)"><img src='./images/fish.png' width="60px" height="80px"></button>
-        <button class='choice' id="5" onclick="change(5)"><img src='./images/crab.png' width="60px" height="80px"></button>
-        <button class='choice' id="6" onclick="change(6)"><img src='./images/prawn.png' width="60px" height="80px"></button>
+    <div class="bg">
+        <video autoplay muted loop>
+            <source src="firework.mp4" type="video/mp4">
+        </video>
 
+        <div class="content">
+            <div>
+                <p id="m1">deer: 0</p>
+                <p id="m2">gourd: 0</p>
+                <p id="m3">chick: 0</p>
+                <p id="m4">fish: 0</p>
+                <p id="m5">crab: 0</p>
+                <p id="m6">shrimp: 0</p>
+            </div>
+            <input type="number" min="0" id="add">
+            <button onclick="add_money()">Add money</button>
+            <button id='end' onclick="end()">End Bet</button>
+            <button id='start' onclick="start()">Start</button>
+            <button id='again' onclick="again()">Again</button>
+            <div>
+                <input type="range" min="0" max="50" value="0" step= '10' id="myRange">
+                <p id='m_bet'></p>
+                <p id="total"></p>
+                <p id="earn">You earn: ...</p>
+            </div>
+            <div>
+                <button class='random' id="r1"></button>
+                <button class='random' id='r2'></button>
+                <button class='random' id="r3"></button>
+            </div> 
+        
+            <div>
+                <button class='choice' id="1" onclick="change(1)"><img src='./images/deer.png' width="60px" height="80px"></button>
+                <button class='choice' id="2" onclick="change(2)"><img src='./images/holo.png' width="60px" height="80px"></button>
+                <button class='choice' id="3" onclick="change(3)"><img src='./images/chick.png' width="60px" height="80px"></button>
+                <button class='choice' id="4" onclick="change(4)"><img src='./images/fish.png' width="60px" height="80px"></button>
+                <button class='choice' id="5" onclick="change(5)"><img src='./images/crab.png' width="60px" height="80px"></button>
+                <button class='choice' id="6" onclick="change(6)"><img src='./images/prawn.png' width="60px" height="80px"></button>
+        
+            </div>
+        </div>
     </div>
 
 

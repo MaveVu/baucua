@@ -2,13 +2,9 @@ var images = ['./images/deer.png', './images/holo.png', './images/chick.png', '.
 var choices = ['deer','gourd','chick','fish','crab','shrimp'];
 let arr = Array(6).fill(0);
 let total  = 1000;
-document.getElementById('total').innerHTML = total;
+document.getElementById('total').innerHTML = 'Total: ' + String(total);
 document.getElementById('start').disabled = true;
 document.getElementById('again').disabled = true;
-
-
-document.getElementById('m_bet').innerHTML = 'You bet: ' + document.getElementById('myRange').value;
-
 
 
 
@@ -23,7 +19,7 @@ function change(index){
     else{
         alert('You cannot bet higher than your money');
     }
-    document.getElementById('total').innerHTML = total; 
+    document.getElementById('total').innerHTML = 'Total: ' + String(total); 
     
 }
 
@@ -58,7 +54,7 @@ function start(){
         document.getElementById(String(num)).style.backgroundColor = 'green';
     }
     document.getElementById('earn').innerHTML = 'You earn: ' + String(money(arr, dice));
-    document.getElementById('total').innerHTML = total += money(arr, dice);
+    document.getElementById('total').innerHTML = 'Total: ' + String(total += money(arr, dice));
     document.getElementById('start').disabled = true;
     document.getElementById('again').disabled = false;
     
@@ -102,10 +98,8 @@ function add_money(){
     var money = document.getElementById('add').value;
     if (money == ''){
         alert('You need to add a number');
-        total += 0;
     }
     else{
-        total += parseInt(money);
-        document.getElementById('total').innerHTML = total;
+        document.getElementById('total').innerHTML = 'Total: ' + String(total += parseInt(money));
     }
 }
