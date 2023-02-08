@@ -1,5 +1,5 @@
 var images = ['./images/deer.png', './images/holo.png', './images/chick.png', './images/fish.png', './images/crab.png', './images/prawn.png'];
-var choices = ['deer','gourd','chick','fish','crab','shrimp'];
+var choices = ['Deer','Gourd','Chick','Fish','Crab','Shrimp'];
 let arr = Array(6).fill(0);
 let total  = 1000;
 document.getElementById('total').innerHTML = 'Total: ' + String(total);
